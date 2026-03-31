@@ -10,8 +10,8 @@ public class Week9 {
 public static void main(String[] args) {
 WebDriver driver=new ChromeDriver();
 driver.manage().window().maximize();
-driver.get("https://www.justdial.com/Hyderabad/Bakeries/nct-10033880");
-List<WebElement> m = driver.findElements(By.xpath("//h2[@class='jsx-da112b0f0664a117 resultbox_title font22 fw500 color111 complist_title']"));
+driver.get("https://www.justdial.com/Hyderabad/Bakeries/nct-10033880?trkid=11687-hyderabad-fcat-catne&term=backery&cbflg=");
+List<WebElement> m = driver.findElements(By.xpath("//h2[contains(@class,'resultbox_title')]"));
 for(int i = 0; i< m.size(); i++) {
 String s = m.get(i).getText();
 System.out.println("Text is: " + s);
