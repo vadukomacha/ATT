@@ -8,7 +8,8 @@ public class Week7 {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://duckduckgo.com/");Thread.sleep(1500);
+		driver.get("https://duckduckgo.com/");
+		Thread.sleep(1500);
 		driver.findElement(By.name("q")).sendKeys("CMRIT Hyberabad\n");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//span[normalize-space()='CMR Institute of Technology - Top Engineering collage in Hyderabad")).click();
